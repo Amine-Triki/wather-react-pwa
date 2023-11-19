@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <>
-    <nav  className="navbar navbar-expand-lg sticky-top navbar-dark  bg-dark">
+    <> 
+    <nav  className="navbar navbar-expand-lg sticky-top text-info "  style={{ backgroundColor: '#ffc0cb' }}> 
           <div className="container">
             <Link  to="/" className="navbar-brand" ><h1>Amine Triki</h1></Link>
             <button className="navbar-toggler" 

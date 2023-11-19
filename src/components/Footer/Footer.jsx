@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     
     <>
-      <footer className="footer py-3 bg-dark text-white  ">
+      <footer className="footer py-3 "style={{ backgroundColor: '#ffc0cb' }}  >
         <p id="Rights" className="container text-center mb-0">{`${year} © Amine Triki || All Rights Reserved`} </p>
     </footer>
     </>

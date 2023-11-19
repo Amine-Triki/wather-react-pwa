@@ -1,11 +1,12 @@
+import './Home.css'
 
 const home = () => {
   return (
-    <>
+    
     <main>
 
     </main>
-    </>
+    
   )
 }
 
