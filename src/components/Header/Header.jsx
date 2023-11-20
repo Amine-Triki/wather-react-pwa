@@ -20,7 +20,10 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="main">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link  to="/" className="nav-link  p-2 p-lg-3">Weather</Link>
+                  <Link  to="/" className="nav-link  p-2 p-lg-3">Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link  to="/weather" className="nav-link  p-2 p-lg-3">Weather</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/projects" className="nav-link  p-2 p-lg-3">Projects</Link>
