@@ -1,5 +1,7 @@
 import "./Home.css";
 
+import AmineTrikiImg from "/src/assets/Amine triki.webp"
+
 import { RiGithubFill } from "react-icons/ri";
 import { RiLinkedinFill } from "react-icons/ri";
 import { RiFacebookCircleFill } from "react-icons/ri";
@@ -76,7 +78,7 @@ const home = () => {
           </div>
           <img
             className="image mt-5 mb-5 "
-            src="/src/assets/Amine triki.webp"
+            src={AmineTrikiImg}
             alt="Amine Triki"
             title="Amine Triki"
           />
