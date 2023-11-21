@@ -6,9 +6,14 @@ import { RiFacebookCircleFill } from "react-icons/ri";
 import { RiYoutubeFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 
+import { Helmet } from 'react-helmet-async';
+
 const home = () => {
   return (
     <main className="  d-flex justify-content-center align-items-center">
+      <Helmet>
+        <title>Home</title>
+      </Helmet> 
       <section className="landing ">
         <div className="container  d-flex justify-content-center align-items-center flex-wrap align-content-between">
           <div>

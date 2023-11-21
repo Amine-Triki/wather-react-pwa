@@ -3,7 +3,7 @@ import './Contact.css'
 import { FaUserLarge } from "react-icons/fa6";
 import { RiMailLine } from "react-icons/ri";
 import { RiMapPinLine } from "react-icons/ri";
-
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
 
@@ -15,6 +15,9 @@ const Contact = () => {
   return (
     
     <main>
+      <Helmet>
+        <title>Contact Me</title>
+      </Helmet> 
       <section className=" text-center pt-5 pb-5" id="Contact">
       <div className="container">
         <div className="main-title mt-5 mb-5 position-relative">

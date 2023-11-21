@@ -2,6 +2,8 @@ import { useState } from 'react';
 import projects from './AllProjects';
 import './Projects.css';
 
+import { Helmet } from 'react-helmet-async';
+
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
@@ -11,6 +13,9 @@ const Projects = () => {
 
   return (
     <main>
+      <Helmet>
+        <title>My Projsects</title>
+      </Helmet> 
       <section className="text-center pt-5 pb-5">
         <div className="container">
         <div className="main-title mt-5 mb-5 position-relative">

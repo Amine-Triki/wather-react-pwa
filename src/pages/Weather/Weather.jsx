@@ -1,5 +1,7 @@
 import './Weather.css'
 
+import { Helmet } from 'react-helmet-async';
+
 import  { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -29,6 +31,9 @@ const Weather = () => {
 
   return (
     <main className="d-flex justify-content-center align-items-center">
+      <Helmet>
+        <title>Weather</title>
+      </Helmet> 
       {data.current ? (
         <div className="card shadow-lg p-3 mb-5 bg-body rounded border border-info" style={{ width: '20rem' }}>
           <div className="card-body">
