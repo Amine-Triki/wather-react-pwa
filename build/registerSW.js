@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https://amine-triki.github.io/wather-react-pwa/sw.js', { scope: 'https://amine-triki.github.io/wather-react-pwa/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/wather-react-pwa/sw.js', { scope: '/wather-react-pwa/' })})}
