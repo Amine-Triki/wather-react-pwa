@@ -51,7 +51,7 @@ const manifestForPlugin = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/wather-react-pwa/",
+  base: '/wather-react-pwa/',
   plugins: [react(), VitePWA(manifestForPlugin)],
   build: {
     outDir: 'build',
