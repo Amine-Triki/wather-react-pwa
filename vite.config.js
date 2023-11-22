@@ -43,8 +43,8 @@ const manifestForPlugin = {
     theme_color: "#171717",
     background_color: "#e8ebf2",
     display: "standalone",
-    scope: "/",
-    start_url: "/",
+    scope: "/wather-react-pwa/",
+    start_url: "/wather-react-pwa/",
     orientation: "portrait",
   },
 };
