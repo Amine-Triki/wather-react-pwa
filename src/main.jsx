@@ -5,6 +5,9 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
+const swPath = '/wather-react-pwa/service-worker.js';
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
@@ -13,4 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.register(swPath);
+
+
+
+

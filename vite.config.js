@@ -25,7 +25,7 @@ const manifestForPlugin = {
         src: "/icon-144x144.png",
         sizes: "144x144",
         type: "image/png",
-        purpose: "icon 144  144",
+        purpose: "any",
       },
       {
         src: "/icon-256x256.png",
