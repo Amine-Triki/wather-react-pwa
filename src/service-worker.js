@@ -70,3 +70,24 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+self.addEventListener('install', (event) => {
+  // Perform installation steps
+  event.waitUntil(
+    caches.open('my-cache').then((cache) => {
+      console.log('Opened cache');
+      return cache.addAll(['/index.html', '/']);
+    })
+  );
+});
+
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      // Cache hit - return response
+      if (response) {
+        return response;
+      }
+      return fetch(event.request);
+    })
+  );
+});
