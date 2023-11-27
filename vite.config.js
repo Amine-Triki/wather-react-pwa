@@ -52,7 +52,11 @@ const manifestForPlugin = {
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/wather-react-pwa/',
-  plugins: [react(), VitePWA({ ...manifestForPlugin, base: '/wather-react-pwa/' }, )],
+  plugins: [react(), VitePWA({ ...manifestForPlugin, base: '/wather-react-pwa/' , registerType: 'autoUpdate',
+  workbox: {
+    clientsClaim: true,
+    skipWaiting: true
+  } }, )],
   build: {
     outDir: 'build',
     
