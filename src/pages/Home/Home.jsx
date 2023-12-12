@@ -1,6 +1,6 @@
 import "./Home.css";
 
-import AmineTrikiImg from "/src/assets/Amine triki.webp"
+import AmineTrikiImg from "./src/assets/Amine"
 
 import { RiGithubFill } from "react-icons/ri";
 import { RiLinkedinFill } from "react-icons/ri";
