@@ -12,29 +12,25 @@ const manifestForPlugin = {
     description: "An app that can show the weather forecast for your city.",
     icons: [
       {
-        src: "/icon-192x192.png",
+        src: "assets/icon-192x192.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        src: "/icon-512x512.png",
+        src: "assets/icon-512x512.png",
         sizes: "512x512",
         type: "image/png",
+        purpose: "any",
       },
+   
       {
-        src: "/icon-144x144.png",
-        sizes: "144x144",
-        type: "image/png",
-        purpose: "any maskable",
-      },
-      {
-        src: "/icon-256x256.png",
+        src: "assets/icon-256x256.png",
         sizes: "256x256",
         type: "image/png",
         purpose: "icon 256 256",
       },
       {
-        src: "/icon-384x384.png",
+        src: "assets/icon-384x384.png",
         sizes: "384x384",
         type: "image/png",
         purpose: "any maskable",
@@ -43,16 +39,18 @@ const manifestForPlugin = {
     theme_color: "#171717",
     background_color: "#e8ebf2",
     display: "standalone",
-    scope: "/wather-react-pwa/",
-    start_url: "/wather-react-pwa/",
+    scope: "/",
+    start_url: "/",
     orientation: "portrait",
   },
 };
 
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/wather-react-pwa/',
-  plugins: [react(), VitePWA({ ...manifestForPlugin, base: '/wather-react-pwa/' , registerType: 'autoUpdate',
+  base: '/',
+  plugins: [react(), VitePWA({ ...manifestForPlugin, base: '/' , registerType: 'autoUpdate',
   workbox: {
     clientsClaim: true,
     skipWaiting: true

@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Router basename={'/wather-react-pwa/'}>
+      <Router basename={'/'}>
         <Header/>
         
         <Routes>
