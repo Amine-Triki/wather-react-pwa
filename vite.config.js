@@ -49,16 +49,8 @@ const manifestForPlugin = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
-  plugins: [react(), VitePWA({ ...manifestForPlugin, base: '/' , registerType: 'autoUpdate',
-  workbox: {
-    clientsClaim: true,
-    skipWaiting: true
-  } }, )],
-  build: {
-    outDir: 'build',
-    
-  },
+  base: "./",
+  plugins: [react(), VitePWA(manifestForPlugin)],
 });
 
 
