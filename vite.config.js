@@ -11,12 +11,7 @@ const manifestForPlugin = {
     short_name: "Weather app",
     description: "An app that can show the weather forecast for your city.",
     icons: [
-      {
-        src: "/icon-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-        purpose: "any",
-      },
+      
       {
         src: "/icon-512x512.png",
         sizes: "512x512",
