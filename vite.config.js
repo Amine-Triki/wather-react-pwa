@@ -32,7 +32,7 @@ const manifestForPlugin = {
         src: "/icon-256x256.png",
         sizes: "256x256",
         type: "image/png",
-        purpose: "icon 256 256",
+        purpose: "icon",
       },
       {
         src: "/icon-384x384.png",
