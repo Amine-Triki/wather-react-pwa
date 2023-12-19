@@ -5,10 +5,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 const manifestForPlugin = {
   registerType: "prompt",
-  includeAssets: ["favicon.ico", "icon-256x256.png", "icon-384x384.svg" , "icon-144x144.svg"],
+  includeAssets: ["favicon.ico", "icon-256x256.png", "icon-384x384.svg" ],
   manifest: {
-    name: "Weather Ups",
-    short_name: "Weather Ups",
+    name: "Weather app",
+    short_name: "Weather app",
     description: "An app that can show the weather forecast for your city.",
     icons: [
       {
