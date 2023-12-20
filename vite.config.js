@@ -14,28 +14,31 @@ const manifestForPlugin = {
       {
         src: "/icon-192x192.png",
         sizes: "192x192",
-        type: "image/png",
-        purpose: "any",
+        type: "image/png"
       },
       {
         src: "/icon-512x512.png",
         sizes: "512x512",
-        type: "image/png",
-        purpose: "any",
+        type: "image/png"
       },
-      
+      {
+        src: "/icon-144x144.png",
+        sizes: "144x144",
+        type: "image/png",
+        purpose: "any maskable"
+      },
       {
         src: "/icon-256x256.png",
         sizes: "256x256",
         type: "image/png",
-        purpose: "icon",
+        purpose: "icon 256 256"
       },
       {
         src: "/icon-384x384.png",
         sizes: "384x384",
         type: "image/png",
-        purpose: "any maskable",
-      },
+        purpose: "any maskable"
+      }
     ],
     theme_color: "#171717",
     background_color: "#e8ebf2",
