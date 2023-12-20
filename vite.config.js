@@ -40,7 +40,6 @@ const manifestForPlugin = {
         type: "image/png",
         purpose: "any maskable"
       }
-      
     ],
     theme_color: "#171717",
     background_color: "#e8ebf2",
