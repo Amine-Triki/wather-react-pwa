@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 const manifestForPlugin = {
   registerType: "prompt",
-  includeAssets: ["favicon.ico", "icon-256x256.png", "icon-384x384.svg" ],
+  includeAssets: ['favicon.ico', "apple-touc-icon.png", "masked-icon.png" ],
   manifest: {
     name: "Weather app",
     short_name: "Weather app",
@@ -20,7 +20,14 @@ const manifestForPlugin = {
       {
         src: "./icon-512x512.png",
         sizes: "512x512",
-        type: "image/png"
+        type: "image/png",
+        purpose:'favicon'
+      },
+      {
+        src: '/apple-touch-icon.png',
+        sizes:'180x180',
+        type:'image/png',
+        purpose:'apple touch icon',
       },
       {
         src: "./icon-144x144.png",
