@@ -5,7 +5,8 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 
 import './App.css'
 import { Header , Footer } from './components/index'
-import { Home , Weather , Projects , Contact} from './pages/index'
+import { Home , Weather , Projects , Contact , Privacy , Terms} from './pages/index'
+
 
 
 
@@ -22,6 +23,8 @@ function App() {
           <Route path='/weather' element ={<Weather/>} />
           <Route path='/contact' element ={<Contact/>} />
           <Route path='/projects' element ={<Projects/>} />
+          <Route path='/privacy_policy' element ={<Privacy/>} />
+          <Route path='/terms_of_service' element ={<Terms/>} />
           
         
         </Routes>
