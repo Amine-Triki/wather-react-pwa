@@ -1,8 +1,8 @@
-import './Contact.css'
+import './Terms.css'
 
 import { Helmet } from 'react-helmet-async';
 
-const Contact = () => {
+const Terms = () => {
 
   return (
     
@@ -16,4 +16,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Terms
