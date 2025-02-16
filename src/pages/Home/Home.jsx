@@ -20,18 +20,17 @@ const home = () => {
         <div className="container  d-flex justify-content-center align-items-center flex-wrap align-content-between">
           <div>
             <h2 className="pt-3">Hello , I am Amine triki</h2>
-            <h3 className="mt-3">Junior front end developer</h3>
+            <h3 className="mt-3">I am Junior front end developer</h3>
             <h3 className="mt-3">
-              I create successful websites that are fast, easy to use and built
-              with best practices
+            based in tunisia; I create elegant and responsive sites, easy to use and built with best practices
             </h3>
             <h3 className="mt-3">
-              I use Sass, Tailwind Css, Bootstrap, JavaScript, Vue js & React ;
-              I am a WordPress editor.
+            I use HTML ,CSS, SASS, Tailwind CSS, Bootstrap, JavaScript & React js;
+            I am a WordPress designer
             </h3>
             <a
               className="btn  rounded-pill main-btn  mt-3 fs-4"
-              href="https://mega.nz/file/PJ8H2S5B#3siRUw1DYrWD7bTB8wgNt0jO3M0Ztjgv-JhCVQ4McgM"
+              href="https://mega.nz/file/XUt13JrK#htwbQSx2cPZoiB3NImWTzMJ-2N-Rg4gtcCOy9wFherE"
               target="_blank"
               rel="noreferrer"
               style={{ backgroundColor: "#ffc0cb" }}
