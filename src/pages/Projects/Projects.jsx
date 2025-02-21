@@ -30,12 +30,6 @@ const Projects = () => {
               All works
             </li>
             <li
-              className={activeCategory === 'Vue-js' ? 'active' : ''}
-              onClick={() => switchCategories('Vue-js')}
-            >
-              Vue js
-            </li>
-            <li
               className={activeCategory === 'JavaScript' ? 'active' : ''}
               onClick={() => switchCategories('JavaScript')}
             >
