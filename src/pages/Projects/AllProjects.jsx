@@ -13,7 +13,7 @@ const projects = [
       title: 'Weather Website',
       description: 'React + vite + BOOTSTRAP + PWA',
       link: 'https://wather-react-pwa.vercel.app/',
-      github:'https://github.com/Amine-Triki/react-pwa',
+      github:'https://github.com/Amine-Triki/wather-react-pwa',
       imageSrc: Img10,
     },
 
