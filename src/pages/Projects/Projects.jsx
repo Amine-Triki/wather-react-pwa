@@ -59,9 +59,16 @@ const Projects = () => {
                       <div className="card-body">
                         <h5 className="card-title text-info">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.link} className="btn" rel="noreferrer" target="_blank" style={{ backgroundColor: '#BFECFF' }}>
-                        Preview
-                        </a>
+                        <div className='d-flex justify-content-around'>
+                        {project.category !== 'Wordpress' && (
+                          <a href={project.github} className="btn" rel="noreferrer" target="_blank" style={{ backgroundColor: '#ffc0cb' }}>
+                          Github
+                          </a>
+                          )}
+                          <a href={project.link} className="btn" rel="noreferrer" target="_blank" style={{ backgroundColor: '#BFECFF' }}>
+                          Preview
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

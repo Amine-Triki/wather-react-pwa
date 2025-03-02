@@ -13,6 +13,7 @@ const projects = [
       title: 'Weather Website',
       description: 'React + vite + BOOTSTRAP + PWA',
       link: 'https://wather-react-pwa.vercel.app/',
+      github:'https://github.com/Amine-Triki/react-pwa',
       imageSrc: Img10,
     },
 
@@ -21,6 +22,7 @@ const projects = [
       title: 'Weather Website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/Weather-js/',
+      github:'https://github.com/Amine-Triki/Weather-js',
       imageSrc: Img8,
     },
     
@@ -43,6 +45,7 @@ const projects = [
       title: 'personal website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/portfolio/',
+      github:'https://github.com/Amine-Triki/portfolio',
       imageSrc: Img3,
     },
     {
@@ -50,6 +53,7 @@ const projects = [
       title: 'personal website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/',
+      github:'https://github.com/Amine-Triki/Amine-Triki.github.io',
       imageSrc: Img2,
     },
 
@@ -58,6 +62,7 @@ const projects = [
       title: 'quran with voice',
       description: 'React + vite + BOOTSTRAP + PWA',
       link: 'https://quran-with-voice.vercel.app/',
+      github:'https://github.com/Amine-Triki/quran-with-voice',
       imageSrc: Img11,
     },
     
@@ -67,6 +72,7 @@ const projects = [
       title: 'Weather Website',
       description: 'Nextjs + Tailwind css + PWA',
       link: 'https://next-js-js-portfolio.vercel.app/',
+      github:'https://github.com/Amine-Triki/nextJs-js-portfolio',
       imageSrc: Img12,
     },
     // Add more projects as needed
