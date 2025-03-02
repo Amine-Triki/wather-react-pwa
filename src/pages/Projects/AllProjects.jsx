@@ -4,6 +4,8 @@ import Img5 from "/src/assets/5.webp"
 import Img4 from "/src/assets/4.webp"
 import Img3 from "/src/assets/3.webp"
 import Img2 from "/src/assets/2.webp"
+import Img11 from "/src/assets/11.webp"
+import Img12 from "/src/assets/12.webp"
 
 const projects = [
     {
@@ -50,7 +52,23 @@ const projects = [
       link: 'https://amine-triki.github.io/',
       imageSrc: Img2,
     },
+
+    {
+      category: 'React',
+      title: 'quran with voice',
+      description: 'React + vite + BOOTSTRAP + PWA',
+      link: 'https://quran-with-voice.vercel.app/',
+      imageSrc: Img11,
+    },
     
+
+    {
+      category: 'React',
+      title: 'Weather Website',
+      description: 'Nextjs + Tailwind css + PWA',
+      link: 'https://next-js-js-portfolio.vercel.app/',
+      imageSrc: Img12,
+    },
     // Add more projects as needed
   ];
 

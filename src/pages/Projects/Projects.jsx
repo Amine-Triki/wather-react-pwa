@@ -60,7 +60,7 @@ const Projects = () => {
                         <h5 className="card-title text-info">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
                         <a href={project.link} className="btn" rel="noreferrer" target="_blank" style={{ backgroundColor: '#BFECFF' }}>
-                          Visit
+                        Preview
                         </a>
                       </div>
                     </div>
