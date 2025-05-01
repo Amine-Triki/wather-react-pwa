@@ -10,7 +10,13 @@ const Projects = () => {
   const switchCategories = (category) => {
     setActiveCategory(category);
   };
-
+  const categories = [
+    { key: 'all', label: 'All works' },
+    { key: 'JavaScript', label: 'JavaScript' },
+    { key: 'Wordpress', label: 'Wordpress' },
+    { key: 'React', label: 'React' },
+  ];
+  
   return (
     <main>
       <Helmet>
@@ -22,39 +28,26 @@ const Projects = () => {
                 <h2>My Projects</h2>
                 <p>What I build</p>
             </div>
-          <ul className="switcher bg-warning text-white d-flex flex-row py-3 justify-content-around px-0 flex-wrap sm:flex-column">
-            <li
-              className={activeCategory === 'all' ? 'active' : ''}
-              onClick={() => switchCategories('all')}
-            >
-              All works
-            </li>
-            <li
-              className={activeCategory === 'JavaScript' ? 'active' : ''}
-              onClick={() => switchCategories('JavaScript')}
-            >
-              JavaScript
-            </li>
-            <li
-              className={activeCategory === 'Wordpress' ? 'active' : ''}
-              onClick={() => switchCategories('Wordpress')}
-            >
-              Wordpress
-            </li>
-            <li
-              className={activeCategory === 'React' ? 'active' : ''}
-              onClick={() => switchCategories('React')}
-            >
-              React
-            </li>
-          </ul>
+            <ul className="switcher bg-warning text-white d-flex flex-row py-3 justify-content-around px-0 flex-wrap sm:flex-column">
+  {categories.map(({ key, label }) => (
+    <li
+      key={key}
+      className={activeCategory === key ? 'active' : ''}
+      onClick={() => switchCategories(key)}
+      style={{ cursor: 'pointer' }}
+    >
+      {label}
+    </li>
+  ))}
+</ul>
+
           <div className="gallery text-start">
             <div className="gap-5 d-flex justify-content-center flex-wrap">
               {projects
                 .filter((project) => activeCategory === 'all' || project.category === activeCategory)
                 .map((project, index) => (
                   <div className={`post ${project.category} mb-3`} key={index}>
-                    <div className="card" style={{ width: '18rem' }}>
+                    <div className="card h-100" style={{ width: '18rem' }}>
                       <img src={project.imageSrc} className="card-img-top" alt={project.title} />
                       <div className="card-body">
                         <h5 className="card-title text-info">{project.title}</h5>
@@ -65,9 +58,11 @@ const Projects = () => {
                           Github
                           </a>
                           )}
+                          {project.link !== '' && (
                           <a href={project.link} className="btn" rel="noreferrer" target="_blank" style={{ backgroundColor: '#BFECFF' }}>
                           Preview
                           </a>
+                          )}
                         </div>
                       </div>
                     </div>
