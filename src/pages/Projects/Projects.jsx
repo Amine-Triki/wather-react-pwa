@@ -60,7 +60,7 @@ const Projects = () => {
             <h2>My Projects</h2>
             <p>What I build</p>
           </div>
-          <ul className="switcher bg-warning text-white d-flex flex-row py-3 justify-content-around px-0 flex-wrap sm:flex-column">
+          <ul className="switcher bg-warning text-white d-flex  py-3 justify-content-around px-0 flex-wrap flex-column flex-md-row">
             {categories.map(({ key, label }) => (
               <li
                 key={key}
